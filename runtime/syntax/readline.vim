@@ -3,9 +3,9 @@
 " Maintainer(s):        Daniel Moch <daniel@danielmoch.com>
 "                       Brian Plunkett <dev2sec@outlook.com>
 " Previous Maintainer:  Nikolai Weibull <now@bitwi.se>
-" Latest Revision:      2018-07-26
-"                       Add new functions for Readline 7 / Bash 4.4
-"                       (credit: Github user bewuethr)
+" Latest Revision:      2025-08-31
+"                       Add new variables & functions for Readline 8.3 / Bash 5.3
+"                       (credit: Github user dev2sec)
 
 if exists('b:current_syntax')
   finish
@@ -151,6 +151,9 @@ syn keyword readlineVariable    contained
                               \ show-mode-in-prompt
                               \ skip-completed-text
                               \ visible-stats
+                              \ enable-active-region
+                              \ force-meta-prefix
+                              \ search-ignore-case
 
 syn keyword readlineVariable    contained
                               \ nextgroup=readlineString
@@ -160,6 +163,9 @@ syn keyword readlineVariable    contained
                               \ vi-cmd-mode-string
                               \ vi-ins-mode-string
                               \ emacs-mode-string
+                              \ active-region-end-color
+                              \ active-region-start-color
+                              \ isearch-terminators
 
 syn keyword readlineVariable    contained
                               \ nextgroup=readlineNumber
@@ -341,6 +347,44 @@ syn keyword readlineFunction    contained
                               \ vi-yank-to
                               \ vi-column
                               \ vi-change-case
+                              \
+                              \ arrow-key-prefix
+                              \ backward-byte
+                              \ bracketed-paste-begin
+                              \ clear-display
+                              \ do-lowercase-version
+                              \ execute-named-command
+                              \ export-completions
+                              \ fetch-history
+                              \ forward-byte
+                              \ history-substring-search-backward
+                              \ history-substring-search-forward
+                              \ next-screen-line
+                              \ non-incremental-forward-search-history-again
+                              \ non-incremental-reverse-search-history-again
+                              \ old-menu-complete
+                              \ operate-and-get-next
+                              \ paste-from-clipboard
+                              \ previous-screen-line
+                              \ tty-status
+                              \ vi-bWord
+                              \ vi-back-to-indent
+                              \ vi-backward-bigword
+                              \ vi-backward-word
+                              \ vi-bword
+                              \ vi-eWord
+                              \ vi-end-bigword
+                              \ vi-eword
+                              \ vi-fWord
+                              \ vi-forward-bigword
+                              \ vi-forward-word
+                              \ vi-fword
+                              \ vi-insertion-mode
+                              \ vi-overstrike
+                              \ vi-overstrike-delete
+                              \ vi-rubout
+                              \ vi-unix-word-rubout
+                              \ vi-yank-pop
 
 if exists("readline_has_bash")
   syn keyword readlineFunction  contained
