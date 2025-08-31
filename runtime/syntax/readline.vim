@@ -154,6 +154,11 @@ syn keyword readlineVariable    contained
                               \ enable-active-region
                               \ force-meta-prefix
                               \ search-ignore-case
+                              \ byte-oriented
+                              \ enable-active-region
+                              \ force-meta-prefix
+                              \ search-ignore-case
+                              \ prefer-visible-bell
 
 syn keyword readlineVariable    contained
                               \ nextgroup=readlineString
