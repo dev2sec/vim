@@ -1,6 +1,7 @@
 " Vim syntax file
 " Language:             readline(3) configuration file
-" Maintainer:           Daniel Moch <daniel@danielmoch.com>
+" Maintainer(s):        Daniel Moch <daniel@danielmoch.com>
+"                       Brian Plunkett <dev2sec@outlook.com>
 " Previous Maintainer:  Nikolai Weibull <now@bitwi.se>
 " Latest Revision:      2018-07-26
 "                       Add new functions for Readline 7 / Bash 4.4
@@ -197,7 +198,7 @@ syn region  readlineString      contained display oneline
                               \ end=+"+
 
 syn match   readlineNumber      contained display
-                              \ '[+-]\d\+\>'
+                              \ '[+-]\?\d\+'
 
 syn keyword readlineEditingMode contained
                               \ emacs
